@@ -69,8 +69,104 @@
           text-align: center;
         }
 
+        .Global-feed {
+          color: #5cb85c;
+          padding: 8px 16px;
+          font-size: 16px;
+        }
+        .Your-feed{
+          color: darkgray;
+        }
 
+        .Your-feed:hover {
+          color: black;
+        }
+        .Global-feed:hover {
+          color: #5cb85c;
 
+        }
+        .article-user {
+          box-sizing: border-box;
+          color: rgb(55,58,60);
+          display: block;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 24px;
+          margin-bottom: 16px;
+          margin-left: 0px;
+          margin-right: 0px;
+          margin-top: 0px;
+        }
+        .img {
+          border-radius: 50px;
+          display: inline-block;
+
+        }
+
+        .author {
+          box-sizing: border-box;
+          color: #5cb85c;
+          font-size: 16px;
+          display: block;
+          text-decoration-style: solid;
+          font-weight: 500;
+          text-decoration-color: #5cb85c;
+        }
+        .date {
+          font-size: 12.8px;
+          display: block;
+          line-height: 16px;
+          color: rgb(187,187,187);
+        }
+        .info {
+          font-size: 16px;
+          display: inline-block;
+          margin-bottom: 0px;
+          margin-left: 4.8px;
+          margin-right: 24px;
+          margin-top: 0px;
+        }
+        .preview-link h1 {
+          text-decoration: none;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 26.4px;
+          color: rgb(55,58,60);
+        }
+        .preview-link p {
+          box-sizing: border-box;
+          color: rgb(153,153,153);
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 20.8px;
+          margin-block-end: 15px;
+          margin-block-start: 0px;
+          margin-bottom: 15px;
+        }
+        .sidebar {
+          background-color: rgb(243,243,243);
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
+          border-top-right-radius: 4px;
+          border-top-left-radius: 4px;
+
+        }
+        .tag-list {
+          color: rgb(55,58,60);
+          display: block;
+          font-size: 16px;
+        }
+        .tag-default {
+          font-size: 12.8px;
+          padding-left: 7.68px;
+          padding-right: 7.68px;
+          padding-top: 1.6px;
+          padding-bottom: 1.6px;
+          background-color: rgb(129,138,145);
+        }
+        .no-underline {
+          text-decoration: none;
+        }
     </style>
   </head>
   <body>
@@ -83,12 +179,9 @@
             <a class="sign-in" href="https://realworld.svelte.dev/">sign in</a>
             <a class="sign-up" href="https://realworld.svelte.dev/">sign up</a>
           </li>
-         
-
         </ul>
     </nav>
     
-
     <div class="Home-page">
       <div class="banner">
           <h1 class="banner-logo">Conduit</h1>
@@ -96,14 +189,74 @@
         </div>
         
       </div>
+    </div>
+
+    <div class="container-page">
+      <div class="row">
+        <div class="feed">
+          <ul class="nav-second">
+            <li class="Global-feed">
+              <a class="Global-feed" href="https://realworld.svelte.dev/?tab=all" target="_blank">Global Feed</a>
+              <a class="Your-feed" href="">Sign in to see your Your Feed</a>
+            </li>      
+          </ul>
+        </div>
+      </div> 
+    </div>
+    <div>
+      <div class="article"> 
+        <div class="article-user">
+          <a class="user" href="https://realworld.svelte.dev/profile/@Anah%20Bene%C5%A1ov%C3%A1">
+            <img src="demo-avatar.png" alt="avatar" class="img">
+          </a>
+          <div class="info">
+            <a class="author" href="https://realworld.svelte.dev/profile/@Anah%20Bene%C5%A1ov%C3%A1">Armin Armini
+            </a>
+            <span class="date"> Sun March 26 2023</span>
+          </div>
+        </div>
+        <a href="https://realworld.svelte.dev/article/If-we-quantify-the-alarm-we-can-get-to-the-FTP-pixel-through-the-online-SSL-interface!-120863" class="preview-link">
+          <h1 class="no-underline">If we quantify the alarm, we can get to the FTP pixel through the online SSL interface!</h1>
+          <p class="no-underline">Omnis perspiciatis qui quia commodi sequi modi. Nostrum quam aut cupiditate est facere omnis possimus. Tenetur similique nemo illo soluta molestias facere quo. Ipsam totam facilis delectus nihil quidem soluta vel est omnis.
+          </p>
+          <span>Read more...</span>
+          <ul class="tag-list">
+            <li class="tag-difault">
+              <a href="https://realworld.svelte.dev/?tag=rerum">rerum</a>
+            </li>
+            <li class="tag-list">
+              <a href="https://realworld.svelte.dev/?tag=maiores">maiores</a>
+            </li>
+            <li class="tag-list">
+              <a href="https://realworld.svelte.dev/?tag=omnis">omnis</a>
+            </li>
+            <li class="tag-list">
+              <a href="https://realworld.svelte.dev/?tag=quae">quae</a>
+            </li>
+          </ul>
+        </a>
+      </div>
+    </div>
+    <div class="sidebar">
+      <p>Popular Tags</p>
+      <div class="tag-list">
+        <a href="https://realworld.svelte.dev/?tag=implementations" class="tag-default">implementations</a>
+        <a href="https://realworld.svelte.dev/?tag=welcome" class="tag-default">welcome</a>
+        <a href="https://realworld.svelte.dev/?tag=introduction" class="tag-default">introduction</a>
+        <a href="https://realworld.svelte.dev/?tag=codebaseShow" class="tag-default">codebaseshow</a>
+        <a href="https://realworld.svelte.dev/?tag=ipsum" class="tag-default">ipsum</a>
+        <a href="https://realworld.svelte.dev/?tag=qui" class="tag-default">qui</a>
+        <a href="https://realworld.svelte.dev/?tag=et" class="tag-default">et</a>
+        <a href="https://realworld.svelte.dev/?tag=quia" class="tag-default">quia</a>
+        <a href="https://realworld.svelte.dev/?tag=cupiditate" class="tag-default">cupiditate</a>
+        <a href="https://realworld.svelte.dev/?tag=deserunt" class="tag-default">deserunt</a>
 
 
 
+        
+
+      </div>
 
     </div>
-    
-
-    
-
   </body>
 </html>
